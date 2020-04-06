@@ -25,7 +25,6 @@ public class read_excel extends AppCompatActivity {
         POIFSFileSystem fs = new POIFSFileSystem(inp);
         HSSFWorkbook workbook = new HSSFWorkbook(fs);
         HSSFSheet sheet = workbook.getSheetAt(0);
-        Row row = sheet.getRow(1);
         for (int rownum=0;rownum<=sheet.getLastRowNum();rownum++){
             Row sheetRow = sheet.getRow(rownum);
             if(sheetRow==null){
